@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
-
+import FinancialInformation from './Component/Financial Information/Financial-Information';
+import LegalInformation from './Component/Legal Information/Legal-Information';
+import FiduciaryAssignment from './Component/Fiduciary Assignment/Fiduciary-Assignment';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App mb-5">
+      <div className="content">
+        
+        <FinancialInformation/>
+        <LegalInformation/>
+        <FiduciaryAssignment/>
+      </div>
     </div>
   );
 }
